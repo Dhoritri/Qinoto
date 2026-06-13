@@ -94,18 +94,18 @@
 
 .shop-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   column-gap: 2.5rem;
   row-gap: 6rem;
 }
 @media (width >= 640px) {
   .shop-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (width >= 1024px) {
   .shop-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -154,7 +154,7 @@
   position: fixed;
   right: 1rem;
   top: 30%;
-  transform: rotate(-90deg) translateY(50%);
+  transform: translateY(50%) rotate(-90deg);
   transform-origin: right;
   z-index: 100;
   background: #000;
@@ -173,7 +173,7 @@
   white-space: nowrap;
 }
 .shop-filter-toggle button:active {
-  transform: rotate(-90deg) translateY(50%) scale(0.95);
+  transform: translateY(50%) rotate(-90deg) scale(0.95);
 }
 
 /* Sidebar / drawer */

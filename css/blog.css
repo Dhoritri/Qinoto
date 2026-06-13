@@ -7,8 +7,8 @@
 
 .blog-grid-wrap { flex-grow: 1; }
 @media (width >= 1024px) { .blog-grid-wrap { width: 75%; } }
-.blog-grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
-@media (width >= 768px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+.blog-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+@media (width >= 768px) { .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .blog-card-wrap { position: relative; }
 
 .blog-card { border: 1px solid #000; display: flex; flex-direction: column; height: 100%; font-family: "Karla", sans-serif; }
