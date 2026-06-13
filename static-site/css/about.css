@@ -1,0 +1,44 @@
+/* ============================================================
+   ABOUT PAGE (About1 / About2)
+   ============================================================ */
+.about-page { background: #fff; min-height: 100vh; display: flex; flex-direction: column; }
+
+.asplit { background: #fff; font-family: "Karla", sans-serif; overflow: hidden; }
+.asplit--1 { padding-top: 5rem; }
+@media (width >= 768px) { .asplit--1 { padding-top: 8rem; } }
+.asplit--2 { margin-bottom: 5rem; }
+@media (width >= 768px) { .asplit--2 { margin-bottom: 6.5rem; } }
+
+.asplit__row { display: flex; flex-direction: column; align-items: stretch; }
+@media (width >= 1024px) { .asplit__row { flex-direction: row; } }
+
+.asplit__media { position: relative; width: 100%; min-height: 300px; }
+@media (width >= 640px) { .asplit__media { min-height: 400px; } }
+@media (width >= 1024px) { .asplit__media { width: 50%; min-height: 600px; } }
+.asplit__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+.asplit__content {
+  width: 100%; display: flex; flex-direction: column; justify-content: center;
+  gap: 1.5rem; padding: 4rem 1.5rem;
+}
+@media (width >= 768px) { .asplit__content { gap: 2rem; padding: 5rem 3rem; } }
+@media (width >= 1024px) { .asplit__content { width: 50%; padding-left: 6rem; padding-right: 6rem; } }
+
+/* About1: image first on mobile, image left / text right on desktop */
+.asplit--1 .asplit__media { order: 2; }
+.asplit--1 .asplit__content { order: 1; }
+@media (width >= 1024px) {
+  .asplit--1 .asplit__media { order: 1; }
+  .asplit--1 .asplit__content { order: 2; }
+}
+/* About2: text first, image second */
+.asplit--2 .asplit__content { order: 1; }
+.asplit--2 .asplit__media { order: 1; }
+@media (width >= 1024px) { .asplit--2 .asplit__media { order: 2; } }
+
+.asplit__heading {
+  font-size: 32px; font-weight: 700; line-height: 1.25; letter-spacing: -0.025em; max-width: 28rem;
+}
+@media (width >= 640px) { .asplit__heading { font-size: 40px; } }
+@media (width >= 768px) { .asplit__heading { font-size: 48px; } }
+.asplit .description { max-width: 28rem; }

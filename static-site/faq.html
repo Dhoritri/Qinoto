@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qinoto</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/faq.css" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <div class="nav__logo-wrap"><a href="index.html" class="nav__logo"><img src="images/logo.png" alt="Blush Logo" /></a></div>
+      <div class="nav__menu">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="shop.html" class="nav__link">Shop</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__action"><button class="nav__burger" aria-label="Open Menu"><span></span><span></span></button></div>
+    </div>
+  </nav>
+  <div class="nav-overlay">
+    <div class="nav-overlay__top">
+      <a href="index.html" class="nav-overlay__logo"><img src="images/logo.png" alt="Blush Logo" /></a>
+      <button class="nav-overlay__close" aria-label="Close Menu"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <ul class="nav-overlay__list">
+      <li class="nav-overlay__item"><a href="index.html" class="nav-overlay__link">Home</a></li>
+      <li class="nav-overlay__item"><a href="shop.html" class="nav-overlay__link">Shop</a></li>
+      <li class="nav-overlay__item"><a href="about.html" class="nav-overlay__link">About</a></li>
+      <li class="nav-overlay__item"><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="faq-main">
+    <!-- Hero -->
+    <section class="page-hero page-hero--faq">
+      <div class="page-hero__inner container">
+        <h1 class="page-hero__title">FAQ</h1>
+        <nav class="page-hero__crumbs">
+          <a href="index.html">HOME</a>
+          <span class="page-hero__diamond">♦</span>
+          <span class="page-hero__current">HELP CENTER</span>
+        </nav>
+      </div>
+    </section>
+
+    <div class="faq-body container">
+      <!-- Left -->
+      <div class="faq-intro">
+        <h1 class="faq-intro__title">All products carefully selected for you</h1>
+        <div class="faq-intro__paras">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+          <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea comm odo consequat. Duis autem vel eum iriure dolor in hend rerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui.</p>
+        </div>
+      </div>
+
+      <!-- Right accordion -->
+      <div class="faq-list" id="faqList">
+        <div class="faq-item is-open">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>WHAT IS WORDPRESS?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">WordPress is a free and open-source content management system (CMS) based on PHP and MySQL. It is the most popular website building platform in the world, powering over 40% of all websites on the internet.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>WHAT IS VISUAL COMPOSER?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">Visual Composer is a drag-and-drop website builder for WordPress. It allows you to create professional-looking websites without writing any code, offering a wide range of elements and templates.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>WHAT IS REVOLUTION SLIDER?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">Slider Revolution is an innovative, responsive WordPress Slider Plugin that displays your content the beautiful way. Whether it's a Slider, Carousel, Hero Scene or even a whole Front Page, the visual, drag &amp; drop editor will let you tell your own stories in no time!</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>WHAT IS WOOCOMMERCE?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">WooCommerce is a customizable, open-source eCommerce platform built on WordPress. It allow users to sell products and services from their WordPress websites easily and securely.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>HOW TO USE THE THEME?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">Using our theme is simple. Once installed, you can head over to the theme options panel to customize your colors, typography, and layout. You can also use the built-in page builder to create custom pages.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>ARE UPDATES COMPLIMENTARY?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">Yes, once you purchase a license, all future updates for that specific product are included for free. You will receive notifications in your WordPress dashboard whenever a new version is available.</div></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q"><button class="faq-q__btn"><div class="faq-q__plus"><div class="faq-q__plus-inner"><div class="bar-h"></div><div class="bar-v"></div></div></div><div class="faq-q__text"><h3>DO YOU OFFER SUPPORT?</h3></div></button></div>
+          <div class="faq-a"><div class="faq-a__inner">We offer 6 months of dedicated support with every purchase. Our team of experts is ready to help you with any technical issues or questions you might have regarding the theme setup and features.</div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__top-inner container">
+        <div class="footer__email"><a href="mailto:blush@qodeinteractive.com">blush@qodeinteractive.com</a></div>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg></a>
+          <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg></a>
+        </div>
+        <div class="footer__form">
+          <input type="email" placeholder="Your E-mail" />
+          <button><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__main container">
+      <div class="footer__grid">
+        <div class="footer__brand"><h2>Lorem ipsum dolor sit amet bla blah blah .</h2></div>
+        <div class="footer__col"><a href="index.html">Home</a><a href="about.html">ABOUT US</a><a href="contact.html">Contact us</a></div>
+        <div class="footer__col"><a href="shop.html">Shop</a><a href="blog.html">Blog</a><a href="faq.html">Faq</a></div>
+        <div class="footer__col"><a href="privacy-policy.html">Privacy policy</a><a href="terms-and-conditions.html">Terms and Conditions</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom"><h1>© Qinoto 2026 - Powered by <a href="https://www.thebigdogdigital.com" target="_blank" rel="noopener noreferrer">BigDog Digital</a></h1></div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg></button>
+
+  <script src="js/shared.js"></script>
+  <script src="js/faq.js"></script>
+</body>
+</html>

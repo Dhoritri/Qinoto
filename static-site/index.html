@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qinoto</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <main style="min-height:100vh">
+    <!-- ===== Navbar ===== -->
+    <nav class="nav">
+      <div class="nav__inner">
+        <div class="nav__logo-wrap">
+          <a href="index.html" class="nav__logo"><img src="images/logo.png" alt="Blush Logo" /></a>
+        </div>
+        <div class="nav__menu">
+          <a href="index.html" class="nav__link is-active">Home</a>
+          <a href="shop.html" class="nav__link">Shop</a>
+          <a href="about.html" class="nav__link">About</a>
+          <a href="contact.html" class="nav__link">Contact</a>
+        </div>
+        <div class="nav__action">
+          <button class="nav__burger" aria-label="Open Menu"><span></span><span></span></button>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay">
+      <div class="nav-overlay__top">
+        <a href="index.html" class="nav-overlay__logo"><img src="images/logo.png" alt="Blush Logo" /></a>
+        <button class="nav-overlay__close" aria-label="Close Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <ul class="nav-overlay__list">
+        <li class="nav-overlay__item is-active"><span class="nav-overlay__highlight"></span><a href="index.html" class="nav-overlay__link">Home</a></li>
+        <li class="nav-overlay__item"><a href="shop.html" class="nav-overlay__link">Shop</a></li>
+        <li class="nav-overlay__item"><a href="about.html" class="nav-overlay__link">About</a></li>
+        <li class="nav-overlay__item"><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- ===== Banner ===== -->
+    <section class="banner">
+      <div class="banner__bg">
+        <picture>
+          <source media="(max-width: 767px)" srcset="https://picsum.photos/1500/1500?random=24" />
+          <img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=2000&auto=format&fit=crop" alt="Banner background" />
+        </picture>
+      </div>
+      <div class="banner__text">
+        <h1 class="banner__title">
+          <span class="banner__char"><span style="animation-delay:0.30s">m</span></span>
+          <span class="banner__char"><span style="animation-delay:0.42s">a</span></span>
+          <span class="banner__char"><span style="animation-delay:0.54s">k</span></span>
+          <span class="banner__char"><span style="animation-delay:0.66s">e</span></span>
+          <span class="banner__char"><span style="animation-delay:0.78s">u</span></span>
+          <span class="banner__char"><span style="animation-delay:0.90s">p</span></span>
+          <span class="banner__char"><span style="animation-delay:1.02s">.</span></span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ===== Section 1 ===== -->
+    <section class="split split--s1">
+      <div class="split__row">
+        <div class="split__media">
+          <div class="split__img split__img--43"><img src="https://picsum.photos/1500/1500?random=2" alt="Product Showcase" /></div>
+        </div>
+        <div class="split__content">
+          <div class="split__inner">
+            <div class="zigzag"><svg viewBox="0 0 40 10" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 5 L5 0 L15 10 L25 0 L35 10 L40 5" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <h2 class="split__heading">Your top rated makeup product. Enhanced.</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamusus nonummy nibh euismod tincidunt utla oreet dolore magn aliquam erat volutpat ad minim.</p>
+            <a href="products.html" class="customButton">
+              <span class="customButton__text">LEARN MORE</span>
+              <div class="customButton__divider"></div>
+              <svg class="customButton__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Section 2 ===== -->
+    <section class="split split--s2">
+      <div class="split__row">
+        <div class="split__content">
+          <div class="split__inner">
+            <div class="zigzag"><svg viewBox="0 0 40 10" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 5 L5 0 L15 10 L25 0 L35 10 L40 5" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+            <h2 class="split__heading">Absolute perfection in color shades.</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamusus nonummy nibh euismod tincidunt utla oreet dolore magn aliquam erat volutpat ad.</p>
+            <a href="shades.html" class="customButton">
+              <span class="customButton__text">LEARN MORE</span>
+              <div class="customButton__divider"></div>
+              <svg class="customButton__icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+            </a>
+          </div>
+        </div>
+        <div class="split__media">
+          <div class="split__img split__img--square"><img src="https://picsum.photos/1500/1500?random=3" alt="Color Shades" /></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Categories ===== -->
+    <section class="categories">
+      <div class="categories__grid container">
+        <div class="category"><div class="category__img"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=500&auto=format&fit=crop" alt="Makeup" /></div><h3 class="category__title">Makeup</h3><p class="category__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh tincidunt.</p></div>
+        <div class="category"><div class="category__img"><img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?q=80&w=500&auto=format&fit=crop" alt="Blush" /></div><h3 class="category__title">Blush</h3><p class="category__desc">Proin facilisis faucibus ante, at consequat orci imperdiet non. Sed elementum velit iumus.</p></div>
+        <div class="category"><div class="category__img"><img src="https://picsum.photos/1000/1000" alt="Foundation" /></div><h3 class="category__title">Foundation</h3><p class="category__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh tincidunt.</p></div>
+        <div class="category"><div class="category__img"><img src="https://picsum.photos/1000/1000?random=2" alt="Glossy" /></div><h3 class="category__title">Glossy</h3><p class="category__desc">Proin facilisis faucibus ante, at consequat orci imperdiet non. Sed elementum velit iumus.</p></div>
+        <div class="category"><div class="category__img"><img src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?q=80&w=500&auto=format&fit=crop" alt="Translucent" /></div><h3 class="category__title">Translucent</h3><p class="category__desc">Proin facilisis faucibus ante, at consequat orci imperdiet non. Sed elementum velit iumus.</p></div>
+        <div class="category"><div class="category__img"><img src="https://picsum.photos/1000/1000?random=3" alt="Pink" /></div><h3 class="category__title">Pink</h3><p class="category__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh tincidunt.</p></div>
+        <div class="category"><div class="category__img"><img src="https://images.unsplash.com/photo-1515688594390-b649af70d282?q=80&w=500&auto=format&fit=crop" alt="Trendy" /></div><h3 class="category__title">Trendy</h3><p class="category__desc">Proin facilisis faucibus ante, at consequat orci imperdiet non. Sed elementum velit iumus.</p></div>
+        <div class="category"><div class="category__img"><img src="https://picsum.photos/1000/1000?random=4" alt="Clean" /></div><h3 class="category__title">Clean</h3><p class="category__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed nonummy nibh tincidunt.</p></div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="testimonials">
+      <div class="testimonials__inner animate-slide-in" id="testimonialCard">
+        <div class="testimonials__avatar">
+          <div class="testimonials__avatar-ring"></div>
+          <img id="t-image" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Annie Johnson" />
+        </div>
+        <div class="testimonials__content">
+          <h2 class="testimonials__title" id="t-title">Lovely WordPress Theme</h2>
+          <p class="testimonials__quote" id="t-quote">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat elit posuere. Ut wisi enim ad minim veniam, volutpat quis nostrud diam nonummy exerci.</p>
+          <div class="testimonials__meta">
+            <h3 class="testimonials__name" id="t-name">Annie Johnson</h3>
+            <p class="testimonials__role" id="t-role">CREATIVE DIRECTOR</p>
+          </div>
+        </div>
+        <div class="testimonials__dots" id="t-dots"></div>
+      </div>
+      <button class="testimonials__arrow testimonials__arrow--prev" id="t-prev" aria-label="Previous testimonial"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7" /></svg></button>
+      <button class="testimonials__arrow testimonials__arrow--next" id="t-next" aria-label="Next testimonial"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg></button>
+    </section>
+
+    <!-- ===== Featured Products ===== -->
+    <section class="featured">
+      <div class="featured__grid">
+        <!-- cells injected by featured() below or written inline -->
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=film-eyeshadow"><img src="https://picsum.photos/800/1000?random=1" alt="Film Eyeshadow" /></a><div class="featured__overlay"><a href="product-detail.html?slug=film-eyeshadow" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=film-eyeshadow" class="featured__name">Film Eyeshadow</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=rose-safari"><img src="https://picsum.photos/800/1000?random=6" alt="ROSE SAFARI" /></a><div class="featured__overlay"><a href="product-detail.html?slug=rose-safari" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=rose-safari" class="featured__name">ROSE SAFARI</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=summer-mirage"><img src="https://picsum.photos/800/1000?random=7" alt="SUMMER MIRAGE" /></a><div class="featured__overlay"><a href="product-detail.html?slug=summer-mirage" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=summer-mirage" class="featured__name">SUMMER MIRAGE</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=velvet-matte"><img src="https://picsum.photos/800/1000?random=9" alt="VELVET MATTE" /></a><div class="featured__overlay"><a href="product-detail.html?slug=velvet-matte" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=velvet-matte" class="featured__name">VELVET MATTE</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=glow-serum"><img src="https://picsum.photos/800/1000?random=11" alt="GLOW SERUM" /></a><div class="featured__overlay"><a href="product-detail.html?slug=glow-serum" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=glow-serum" class="featured__name">GLOW SERUM</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=silk-foundation"><img src="https://picsum.photos/800/1000?random=12" alt="SILK FOUNDATION" /></a><div class="featured__overlay"><a href="product-detail.html?slug=silk-foundation" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=silk-foundation" class="featured__name">SILK FOUNDATION</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=eyelash-curler"><img src="https://picsum.photos/800/1000?random=13" alt="EYELASH CURLER" /></a><div class="featured__overlay"><a href="product-detail.html?slug=eyelash-curler" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=eyelash-curler" class="featured__name">EYELASH CURLER</a></div>
+        <div class="featured__cell"><div class="featured__img"><a href="product-detail.html?slug=matte-bronzer"><img src="https://picsum.photos/800/1000?random=16" alt="MATTE BRONZER" /></a><div class="featured__overlay"><a href="product-detail.html?slug=matte-bronzer" class="featured__btn"><span>View Details</span><span class="featured__btn-icon"><span class="featured__btn-divider"></span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z" /><path d="M3 6h18" /><path d="M16 10a4 4 0 0 1-8 0" /></svg></span></a></div></div><a href="product-detail.html?slug=matte-bronzer" class="featured__name">MATTE BRONZER</a></div>
+      </div>
+    </section>
+
+    <!-- ===== Newsletter ===== -->
+    <section class="newsletter">
+      <div class="newsletter__row">
+        <div class="newsletter__media"><img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1000&auto=format&fit=crop" alt="Makeup smears" /></div>
+        <div class="newsletter__content">
+          <div class="zigzag"><svg viewBox="0 0 40 10" fill="none" stroke="currentColor" stroke-width="1"><path d="M0 5 L5 0 L15 10 L25 0 L35 10 L40 5" stroke-linecap="round" stroke-linejoin="round" /></svg></div>
+          <h2 class="newsletter__heading">Visitors can easily sign up for newsletter.</h2>
+          <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diamusus nonummy nibh euismod tincidunt ut laoreet dolore magn aliquam erat volutpat. Ut wisi enim ad min que. Pellent maximus ex et velit tincidunt in pharetra.</p>
+          <form class="newsletter__form">
+            <input type="email" placeholder="Your E-mail" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__top-inner container">
+          <div class="footer__email"><a href="mailto:blush@qodeinteractive.com">blush@qodeinteractive.com</a></div>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a>
+            <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg></a>
+            <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg></a>
+          </div>
+          <div class="footer__form">
+            <input type="email" placeholder="Your E-mail" />
+            <button><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__main container">
+        <div class="footer__grid">
+          <div class="footer__brand"><h2>Lorem ipsum dolor sit amet bla blah blah .</h2></div>
+          <div class="footer__col">
+            <a href="index.html">Home</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="contact.html">Contact us</a>
+          </div>
+          <div class="footer__col">
+            <a href="shop.html">Shop</a>
+            <a href="blog.html">Blog</a>
+            <a href="faq.html">Faq</a>
+          </div>
+          <div class="footer__col">
+            <a href="privacy-policy.html">Privacy policy</a>
+            <a href="terms-and-conditions.html">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <h1>© Qinoto 2026 - Powered by <a href="https://www.thebigdogdigital.com" target="_blank" rel="noopener noreferrer">BigDog Digital</a></h1>
+      </div>
+    </footer>
+
+    <!-- Scroll to top -->
+    <button class="scroll-top" aria-label="Scroll to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg></button>
+  </main>
+
+  <script src="js/shared.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

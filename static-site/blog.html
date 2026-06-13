@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qinoto</title>
+  <link rel="icon" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/shared.css" />
+  <link rel="stylesheet" href="css/blog.css" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <div class="nav__logo-wrap"><a href="index.html" class="nav__logo"><img src="images/logo.png" alt="Blush Logo" /></a></div>
+      <div class="nav__menu">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="shop.html" class="nav__link">Shop</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+      <div class="nav__action"><button class="nav__burger" aria-label="Open Menu"><span></span><span></span></button></div>
+    </div>
+  </nav>
+  <div class="nav-overlay">
+    <div class="nav-overlay__top">
+      <a href="index.html" class="nav-overlay__logo"><img src="images/logo.png" alt="Blush Logo" /></a>
+      <button class="nav-overlay__close" aria-label="Close Menu"><svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
+    </div>
+    <ul class="nav-overlay__list">
+      <li class="nav-overlay__item"><a href="index.html" class="nav-overlay__link">Home</a></li>
+      <li class="nav-overlay__item"><a href="shop.html" class="nav-overlay__link">Shop</a></li>
+      <li class="nav-overlay__item"><a href="about.html" class="nav-overlay__link">About</a></li>
+      <li class="nav-overlay__item"><a href="contact.html" class="nav-overlay__link">Contact</a></li>
+    </ul>
+  </div>
+
+  <main class="blog-main">
+    <div class="container">
+      <div class="blog-layout">
+        <div class="blog-grid-wrap" id="blogGridWrap"><!-- rendered by blog.js --></div>
+
+        <aside class="blog-sidebar">
+          <form class="blog-search" id="blogSearchForm">
+            <input type="text" placeholder="Search..." id="blogSearchInput" />
+            <div class="blog-search__right">
+              <div class="blog-search__sep"></div>
+              <button type="submit"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg></button>
+            </div>
+          </form>
+
+          <div class="blog-about">
+            <h3 class="blog-side-title">About Us</h3>
+            <div class="blog-side-rule"></div>
+            <p>We are ....</p>
+          </div>
+
+          <div class="blog-latest">
+            <h3 class="blog-side-title">Latest Posts</h3>
+            <div class="blog-side-rule"></div>
+            <div class="blog-latest__list" id="blogLatest"><!-- rendered by blog.js --></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__top-inner container">
+        <div class="footer__email"><a href="mailto:blush@qodeinteractive.com">blush@qodeinteractive.com</a></div>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg></a>
+          <a href="#" aria-label="TikTok"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" /></svg></a>
+        </div>
+        <div class="footer__form">
+          <input type="email" placeholder="Your E-mail" />
+          <button><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7" /></svg></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer__main container">
+      <div class="footer__grid">
+        <div class="footer__brand"><h2>Lorem ipsum dolor sit amet bla blah blah .</h2></div>
+        <div class="footer__col"><a href="index.html">Home</a><a href="about.html">ABOUT US</a><a href="contact.html">Contact us</a></div>
+        <div class="footer__col"><a href="shop.html">Shop</a><a href="blog.html">Blog</a><a href="faq.html">Faq</a></div>
+        <div class="footer__col"><a href="privacy-policy.html">Privacy policy</a><a href="terms-and-conditions.html">Terms and Conditions</a></div>
+      </div>
+    </div>
+    <div class="footer__bottom"><h1>© Qinoto 2026 - Powered by <a href="https://www.thebigdogdigital.com" target="_blank" rel="noopener noreferrer">BigDog Digital</a></h1></div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg></button>
+
+  <script src="js/data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>
