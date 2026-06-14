@@ -120,9 +120,24 @@
     });
   }
 
-  // search via Enter (mirrors handleSearch + pushState)
+  // live search: filter on every keystroke + keep the URL in sync
+  function applySearch(val) {
+    var p = new URLSearchParams(window.location.search);
+    if (val) p.set("search", val); else p.delete("search");
+    window.history.replaceState(null, "", "?" + p.toString());
+    searchQuery = val;
+    currentPage = 1;
+    render();
+  }
+
+  searchInput.addEventListener("input", function (e) {
+    applySearch(e.currentTarget.value);
+  });
+
+  // Enter pushes a history entry so the search is shareable/bookmarkable
   searchInput.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
+      e.preventDefault();
       var val = e.currentTarget.value;
       var p = new URLSearchParams(window.location.search);
       if (val) p.set("search", val); else p.delete("search");
@@ -132,6 +147,15 @@
       render();
     }
   });
+
+  // clicking the search icon applies the current input value
+  var searchIcon = document.querySelector(".shop-search-box__icon");
+  if (searchIcon) {
+    searchIcon.style.cursor = "pointer";
+    searchIcon.addEventListener("click", function () {
+      applySearch(searchInput.value);
+    });
+  }
 
   sortEl.addEventListener("change", function () {
     sortOrder = sortEl.value;
